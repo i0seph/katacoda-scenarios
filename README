@@ -1,6 +1,13 @@
-https://bit.ly/3wsxU43
+관리자 권한으로 파워쉘 실행
 
-https://www.crunchydata.com/developers/tutorials
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
+컴퓨터 껐다 켜기
 
+wsl.exe --update
+
+https://dl.rockylinux.org/pub/rocky/8/images/x86_64/Rocky-8-Container-Base.latest.x86_64.tar.xz
+
+wsl --import rocky8 <path-to-vm-dir> Rocky-8-Container-Base.latest.x86_64.tar.xz --version 2
