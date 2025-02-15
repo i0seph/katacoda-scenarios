@@ -4,6 +4,7 @@
 echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 apk update
+apk add curl
 echo "br_netfilter" > /etc/modules-load.d/k8s.conf
 modprobe br_netfilter
 sysctl net.ipv4.ip_forward=1
